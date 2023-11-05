@@ -1,0 +1,105 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap'); */
+
+:root {
+    --clr-primary-first-box:hsl(31, 77%, 52%);
+    --clr-primary-second-box:hsl(184, 100%, 22%);
+    --clr-primary-third-box:hsl(179, 100%, 13%);
+
+    /* paragraphs */
+    --clr-neutral-one:hsla(0, 0%, 100%, 0.75);
+    /* background/ headings/ buttons */
+    --clr-neutral-two:hsl(0, 0%, 95%);
+
+    
+    --ft-family-one:Big Shoulders Display;
+    --ft-family-two:Lexend Deca;
+    --ft-size-one:40px;
+    --ft-size-two:15px;
+    --ft-weight-one:400;
+    --ft-weight-two:700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+* {
+    margin:0;
+    font: inherit;
+}
+
+.container {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.inner-box {
+    max-width: 310px;
+} 
+
+.inner-container {
+   margin:50px;
+   color:inherit;
+}
+
+.box1 {
+    border-radius: 5px 0px 0px 5px;
+    background-color:var(--clr-primary-first-box);
+}
+
+.box2 {
+    background-color: var(--clr-primary-second-box);
+}
+
+.box3 {
+    background-color: var(--clr-primary-third-box);
+    border-radius: 0px 5px 5px 0px
+}
+
+
+.heading {
+    font-family: var(--ft-family-one);
+    font-size: var(--ft-size-one);
+    font-weight: var(--ft-weight-one);
+    text-transform:uppercase;
+    color: var(--clr-neutral-two);
+    margin-top: 30px;
+}
+
+.description {
+    font-family: var(--ft-family-two);
+    font-size: var(--ft-size-two);
+    font-weight: var(--ft-weight-one);
+    color: var(--clr-neutral-one);
+    margin-top: 30px;
+    line-height: 1.5rem;
+}
+
+.btn {
+    font-family: var(--ft-family-two);
+    background-color: var(--clr-neutral-two);
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 5rem;
+}
+
+.box1 > .inner-container > .btn {
+    color: var(--clr-primary-first-box);
+}
+
+.box2 > .inner-container > .btn {
+    color: var(--clr-primary-second-box);
+}
+
+.box3 > .inner-container > .btn {
+    color: var(--clr-primary-third-box);
+}
+
+
